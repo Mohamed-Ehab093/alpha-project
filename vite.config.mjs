@@ -19,6 +19,8 @@ const pages = [
 ];
 
 export default defineConfig({
+  // GitHub Pages serves this project from /alpha-project/, so assets must use relative URLs.
+  base: './',
   build: {
     rollupOptions: {
       input: Object.fromEntries(
